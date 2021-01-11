@@ -1,0 +1,12 @@
+[submodule ".myenv/pyenv"]
+	path = .myenv/pyenv
+	url = https://github.com/pyenv/pyenv.git
+[submodule ".myenv/fzf"]
+	path = .myenv/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule ".myenv/antigen"]
+	path = .myenv/antigen
+	url = https://github.com/zsh-users/antigen.git

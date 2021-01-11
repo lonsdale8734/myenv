@@ -1,0 +1,24 @@
+[user]
+    email = lonsdale8734@gmail.com
+    name = lons
+[alias]
+    st = status
+    ck = checkout
+    cm = commit
+    br = branch
+    lg1 = log --graph --decorate --oneline --all
+    lg2 = log --graph --decorate --oneline
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[core]
+    editor = vim
+[pull]
+    rebase = true
+[includeIf "gitdir:~/workspace/"]
+    path = ~/workspace/.gitconfig
+[includeIf "gitdir:~/github/"]
+    path = ~/github/.gitconfig
+
