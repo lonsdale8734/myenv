@@ -18,11 +18,13 @@ use_root() {
 
 install_bin() {
     apt-get update && apt-get -y upgrade
-    apt-get install -y software-properties-common apt-transport-https ca-certificates
+    apt-get install -y software-properties-common apt-transport-https
     apt-get install -y apt-utils build-essential software-properties-common
     apt-get install -y zsh wget curl openssh-server rsync busybox git vim tmux htop
     apt-get install -y autoconf libtool pkg-config automake make unzip cmake ccache gdb gdbserver
     apt-get install -y tig shellcheck glances fd-find ripgrep
+    apt-get install -y libbz2-dev libreadline-dev libsqlite3-dev
+    # apt-get install -y ca-certificates
 }
 
 use_zsh() {
