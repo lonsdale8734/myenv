@@ -35,6 +35,9 @@ use_zsh() {
 
 setup_myenv() {
     mkdir -p "$HOME/github/"
+    mkdir -p "$HOME/.ssh/"
+    mkdir -p "$HOME/workspace/"
+
     git clone --bare https://github.com/lonsdale8734/myenv.git "$HOME/github/myenv/"
     myenv="/usr/bin/git --git-dir=$HOME/github/myenv/ --work-tree=$HOME"
     $myenv config --local status.showUntrackedFiles no
