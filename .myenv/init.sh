@@ -23,7 +23,7 @@ install_bin() {
     apt-get install -y zsh wget curl openssh-server rsync busybox git vim tmux htop
     apt-get install -y autoconf libtool pkg-config automake make unzip cmake ccache gdb gdbserver
     apt-get install -y tig shellcheck glances fd-find ripgrep
-    apt-get install -y libbz2-dev libreadline-dev libsqlite3-dev
+    apt-get install -y libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
     # apt-get install -y ca-certificates
 }
 
