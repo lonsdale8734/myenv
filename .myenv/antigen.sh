@@ -25,6 +25,7 @@ z
 fzf
 git
 tmux
+direnv
 docker
 ssh-agent
 EOBUNDLES
