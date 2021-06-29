@@ -49,7 +49,7 @@ setup_myenv() {
     curl -fL https://github.com/junegunn/fzf/releases/download/0.25.0/fzf-0.25.0-linux_amd64.tar.gz | tar xz -C "$HOME/.myenv/fzf/bin"
 }
 
-case "$1" in
+case "${1-}" in
     "bin")
         use_root
         install_bin
